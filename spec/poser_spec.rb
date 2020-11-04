@@ -47,11 +47,24 @@ RSpec.describe Poser::Sentence do
 end
 
 RSpec.describe Poser::Comment do
-  it "returns a positive comment" do
-    expect(Poser::Comment.positive).to_not be nil
+  it "returns a random positive comment" do
+    comment = Poser::Comment
+    allow(comment).to receive(:positive).and_return('This is why I downloaded this app.')
+
+    expect(comment.positive).to eq ('This is why I downloaded this app.')
   end
 
-  it "returns a positive comment" do
-    expect(Poser::Comment.neutral).to_not eq nil
+  it "returns a random neutral comment" do
+    comment = Poser::Comment
+    allow(comment).to receive(:neutral).and_return('I guess.')
+
+    expect(comment.neutral).to eq ('I guess.')
+  end
+
+  it 'returns a random negative comment' do
+    comment = Poser::Comment
+    allow(comment).to receive(:negative).and_return('I cannot disagree more.')
+
+    expect(comment.negative).to eq ('I cannot disagree more.')
   end
 end
