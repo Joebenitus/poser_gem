@@ -46,8 +46,8 @@ RSpec.describe Poser::Sentence do
   end
 end
 
-# RSpec.describe Poser::Comment do
-#   it "returns a comment" do
-#     expect(Poser::Comment.new).to eq 'foo'
-#   end
+RSpec.describe Poser::Comment do
+  it "returns a positive comment" do
+    expect(Poser::Comment.positive).to_not be nil
+  end
 end
