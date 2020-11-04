@@ -50,4 +50,8 @@ RSpec.describe Poser::Comment do
   it "returns a positive comment" do
     expect(Poser::Comment.positive).to_not be nil
   end
+
+  it "returns a positive comment" do
+    expect(Poser::Comment.neutral).to_not eq nil
+  end
 end
