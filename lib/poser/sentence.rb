@@ -11,7 +11,7 @@ module Poser
       count.times do 
         output.push(Sentence.new)
       end
-      output.join('')
+      output
     end
   end
 end

@@ -40,9 +40,14 @@ RSpec.describe Poser::Sentence do
   it "returns a sentence" do
     expect(Poser::Sentence.new).not_to be nil
   end
+
+  it "returns multiple sentences" do
+    expect(Poser::Sentence.create(3).length).to eq 3
+  end
 end
 
 # RSpec.describe Poser::Comment do
 #   it "returns a comment" do
-#     expect(Poser::Comment.new).not_to be nil
+#     expect(Poser::Comment.new).to eq 'foo'
 #   end
+end
