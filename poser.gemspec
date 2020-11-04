@@ -1,22 +1,22 @@
 require_relative 'lib/poser/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "poser"
+  spec.name          = "poserbot"
   spec.version       = Poser::VERSION
   spec.authors       = ["Joseph Karnafel", "Alex Goodwin", "Adam Mansell", "Ophelia Swen"]
   spec.email         = ["josephkarnafel@gmail.com"]
 
-  spec.summary       = %q{Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{Write a longer description or delete this line.}
-  spec.homepage      = "http://mygemserver.com"
+  spec.summary       = %q{A ruby gem which randomly generates fake user comment data.}
+  spec.description   = %q{This gem is meant to be used for seeding databases in applications with user comment functionality. Poser achieves this by creating 'dummy' phrases/sentences.}
+  spec.homepage      = "https://rubygems.org/"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
-  spec.metadata["allowed_push_host"] = "http://mygemserver.com"
+  spec.metadata["allowed_push_host"] = ""
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "http://mygemserver.com"
-  spec.metadata["changelog_uri"] = "http://mygemserver.com"
+  spec.metadata["source_code_uri"] = "https://github.com/Joebenitus/poser_gem"
+  spec.metadata["changelog_uri"] = "https://github.com/Joebenitus/poser_gem"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
