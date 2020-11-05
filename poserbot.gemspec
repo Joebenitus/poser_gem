@@ -6,8 +6,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Joseph Karnafel", "Alex Goodwin", "Adam Mansell", "Ophelia Swen"]
   spec.email         = ["josephkarnafel@gmail.com"]
 
-  spec.summary       = %q{A ruby gem which randomly generates fake user comment data.}
-  spec.description   = %q{This gem is meant to be used for seeding databases in applications with user comment functionality. Poser achieves this by creating 'dummy' phrases/sentences.}
+  spec.summary       = %q{A ruby gem which randomly generates sentences for seeding your databases.}
+  spec.description   = %q{Random sentence generator. Used for seeding databases.}
   spec.homepage      = "https://rubygems.org/"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
